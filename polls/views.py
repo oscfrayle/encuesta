@@ -1,6 +1,8 @@
 from django.http import HttpResponseRedirect, HttpResponse
+
 #from django.template.loader import get_template
 #from django.template import Context
+
 from django.shortcuts import render,render_to_response,get_object_or_404
 from django.core.urlresolvers import reverse
 from polls.models import Choice, Poll
@@ -17,6 +19,7 @@ def index(request):
 
 def edit(request):
     return  HttpResponse("Bien Oscar")
+	
 
 def consultar(request):
     return HttpResponse("Bien Oscar")
